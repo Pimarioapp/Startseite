@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pimario</title>
-
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pimarió</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
 
-<img src="landingpage.png" alt="Pimario">
+    <div class="container">
+        <img src="landingpage.png" alt="Etwas Großes entsteht - Pimarió">
+    </div>
 
 </body>
 </html>
