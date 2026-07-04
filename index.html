@@ -10,34 +10,41 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            font-family: sans-serif;
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f7f9f6; /* Die Hintergrundfarbe deines Bildes */
         }
         .container {
             width: 100%;
-            max-width: 800px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 100%;
         }
         .container img {
             width: 100%;
-            height: auto;
-            display: block;
-            object-fit: contain;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* PC-ANSICHT: Wenn der Bildschirm breiter als 768 Pixel ist */
+        @media (min-width: 769px) {
+            .handy-bild { display: none; }
+            .pc-bild { display: block; }
+        }
+
+        /* HANDY-ANSICHT: Wenn der Bildschirm kleiner ist */
+        @media (max-width: 768px) {
+            .pc-bild { display: none; }
+            .handy-bild { display: block; }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="landingpage.png" alt="Etwas Großes entsteht - Pimarió">
+        <img src="landingpage.png" class="pc-bild" alt="Pimarió PC">
+        
+        <img src="landingpage-handy.png" class="handy-bild" alt="Pimarió Handy">
     </div>
 
 </body>
