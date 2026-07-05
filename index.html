@@ -14,25 +14,34 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #f7f9f6; /* Die Hintergrundfarbe deines Bildes */
+            /* Wichtig: Hintergrundfarbe exakt wie deine Grafik */
+            background-color: #f7f9f6; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px; /* Kleiner Sicherheitsabstand zum Rand */
         }
         .container img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            /* Zeigt immer das komplette Bild, ohne Abschneiden */
+            object-fit: contain; 
         }
 
-        /* PC-ANSICHT: Wenn der Bildschirm breiter als 768 Pixel ist */
+        /* PC-ANSICHT */
         @media (min-width: 769px) {
             .handy-bild { display: none; }
             .pc-bild { display: block; }
         }
 
-        /* HANDY-ANSICHT: Wenn der Bildschirm kleiner ist */
+        /* HANDY-ANSICHT */
         @media (max-width: 768px) {
             .pc-bild { display: none; }
             .handy-bild { display: block; }
