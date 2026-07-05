@@ -14,37 +14,35 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            /* Wichtig: Hintergrundfarbe exakt wie deine Grafik */
             background-color: #f7f9f6; 
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .container {
+            position: relative;
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px; /* Kleiner Sicherheitsabstand zum Rand */
+            padding: 10px;
         }
         .container img {
             width: 100%;
             height: 100%;
-            /* Zeigt immer das komplette Bild, ohne Abschneiden */
             object-fit: contain; 
         }
 
-        /* PC-ANSICHT */
-        @media (min-width: 769px) {
-            .handy-bild { display: none; }
-            .pc-bild { display: block; }
-        }
-
-        /* HANDY-ANSICHT */
-        @media (max-width: 768px) {
-            .pc-bild { display: none; }
-            .handy-bild { display: block; }
+        /* Der Klick-Bereich, angepasst an die Bildränder */
+        .insta-link {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            width: 160px;
+            height: 60px;
+            cursor: pointer;
+            z-index: 10;
         }
     </style>
 </head>
@@ -54,7 +52,19 @@
         <img src="landingpage.png" class="pc-bild" alt="Pimarió PC">
         
         <img src="landingpage-handy.png" class="handy-bild" alt="Pimarió Handy">
+
+        <a href="https://www.instagram.com/pimario.app/" target="_blank" class="insta-link"></a>
     </div>
 
+    <style>
+        @media (min-width: 769px) {
+            .handy-bild { display: none; }
+            .pc-bild { display: block; }
+        }
+        @media (max-width: 768px) {
+            .pc-bild { display: none; }
+            .handy-bild { display: block; }
+        }
+    </style>
 </body>
 </html>
