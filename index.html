@@ -36,138 +36,145 @@
 
     <meta name="theme-color" content="#0F3F21">
 
-    <!-- Strukturierte Daten -->
     <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"Organization",
   "name":"Pimario",
   "url":"https://www.pimario.com/",
-  "logo":"https://www.pimario.com/logo.png",
-  "description":"Pimario ist dein persönlicher Einkaufsmanager für Österreich."
+  "logo":"https://www.pimario.com/logo.png"
 }
 </script>
 
-    <style>
+<style>
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        html,
-        body{
-            width:100%;
-            background:#f7f9f6;
-            font-family:Arial,Helvetica,sans-serif;
-        }
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#f7f9f6;
+    display:flex;
+    flex-direction:column;
+    font-family:Arial,Helvetica,sans-serif;
+}
 
-        .hero{
-            width:100%;
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            position:relative;
-        }
+.container{
+    flex:1;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
 
-        .hero img{
-            width:100%;
-            height:auto;
-            display:block;
-            object-fit:contain;
-        }
+.container img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
 
-        /* Unsichtbarer Instagram-Klickbereich */
-        .insta-link{
-            position:absolute;
-            top:2%;
-            right:2%;
-            width:230px;
-            height:90px;
-            z-index:100;
-            cursor:pointer;
-            display:block;
-        }
+/* Instagram Klickbereich */
+.insta-link{
+    position:absolute;
+    top:2%;
+    right:2%;
+    width:220px;
+    height:80px;
+    z-index:100;
+    cursor:pointer;
+}
 
-        footer{
-            background:#0F3F21;
-            color:white;
-            text-align:center;
-            padding:28px 20px;
-        }
+footer{
+    background:#0F3F21;
+    color:#fff;
+    text-align:center;
+    padding:18px 20px;
+}
 
-        footer p{
-            margin:10px 0;
-        }
+footer p{
+    margin:8px 0;
+}
 
-        footer a{
-            color:white;
-            text-decoration:none;
-            margin:0 10px;
-        }
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
 
-        footer a:hover{
-            text-decoration:underline;
-        }
+footer a:hover{
+    text-decoration:underline;
+}
 
-        @media (min-width:769px){
+@media (min-width:769px){
 
-            .mobile{
-                display:none;
-            }
+    .handy-bild{
+        display:none;
+    }
 
-        }
+    .pc-bild{
+        display:block;
+    }
 
-        @media (max-width:768px){
+}
 
-            .desktop{
-                display:none;
-            }
+@media (max-width:768px){
 
-            /* Klickbereich am Handy etwas kleiner */
-            .insta-link{
-                width:160px;
-                height:60px;
-                top:2%;
-                right:2%;
-            }
+    .pc-bild{
+        display:none;
+    }
 
-        }
+    .handy-bild{
+        display:block;
+    }
 
-    </style>
+    .insta-link{
+        width:150px;
+        height:55px;
+        top:2%;
+        right:2%;
+    }
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<section class="hero">
+<div class="container">
 
     <img src="landingpage.png"
-         class="desktop"
-         alt="Pimario – Dein persönlicher Einkaufsmanager">
+         class="pc-bild"
+         alt="Pimario">
 
     <img src="landingpage-handy.png"
-         class="mobile"
-         alt="Pimario – Dein persönlicher Einkaufsmanager">
+         class="handy-bild"
+         alt="Pimario">
 
     <a href="https://www.instagram.com/pimario.app/"
        target="_blank"
        rel="noopener noreferrer"
        class="insta-link"
-       aria-label="Pimario auf Instagram"></a>
+       aria-label="Instagram"></a>
 
-</section>
+</div>
 
 <footer>
 
-    <p><strong>© 2026 Pimario – Eine Marke der JB Trading GmbH</strong></p>
+<p><strong>© 2026 Pimario – Eine Marke der JB Trading GmbH</strong></p>
 
-    <p>
-        <a href="impressum.html">Impressum</a> |
-        <a href="datenschutz.html">Datenschutz</a>
-    </p>
+<p>
+<a href="impressum.html">Impressum</a> |
+<a href="datenschutz.html">Datenschutz</a>
+</p>
 
 </footer>
 
