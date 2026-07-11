@@ -18,7 +18,7 @@
     <!-- Browser-Tab -->
     <link rel="icon" type="image/png" href="blatt.png">
 
-    <!-- Google / Social -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Pimario – Dein persönlicher Einkaufsmanager">
     <meta property="og:description"
         content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
@@ -27,6 +27,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_AT">
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pimario – Dein persönlicher Einkaufsmanager">
     <meta name="twitter:description"
@@ -67,12 +68,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px;
+            padding: 0;
         }
 
         .hero img {
             width: 100%;
             height: auto;
+            display: block;
             object-fit: contain;
         }
 
@@ -91,10 +93,11 @@
             color: white;
             text-decoration: none;
             margin: 0 10px;
+            transition: opacity .2s;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            opacity: .8;
         }
 
         @media (min-width:769px) {
@@ -117,12 +120,12 @@
     <section class="hero">
 
         <img src="landingpage.png"
-            class="desktop"
-            alt="Pimario – Dein persönlicher Einkaufsmanager">
+             class="desktop"
+             alt="Pimario – Dein persönlicher Einkaufsmanager">
 
         <img src="landingpage-handy.png"
-            class="mobile"
-            alt="Pimario – Dein persönlicher Einkaufsmanager">
+             class="mobile"
+             alt="Pimario – Dein persönlicher Einkaufsmanager">
 
     </section>
 
