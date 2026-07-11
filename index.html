@@ -1,143 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Pimario – Dein persönlicher Einkaufsmanager</title>
-
-    <meta name="description"
-        content="Vergleiche Angebote österreichischer Händler, plane deinen Einkauf intelligent und spare Zeit sowie Geld – mit Pimario, deinem persönlichen Einkaufsmanager.">
-
-    <meta name="robots" content="index,follow">
-    <meta name="author" content="Pimario GmbH">
-
-    <link rel="canonical" href="https://www.pimario.com/">
-
-    <!-- Browser-Tab -->
-    <link rel="icon" type="image/png" href="blatt.png">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Pimario – Dein persönlicher Einkaufsmanager">
-    <meta property="og:description"
-        content="Vergleiche Angebote österreichischer Händler, plane deinen Einkauf intelligent und spare Zeit sowie Geld.">
-    <meta property="og:image" content="https://www.pimario.com/logo.png">
-    <meta property="og:url" content="https://www.pimario.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de_AT">
-
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pimario – Dein persönlicher Einkaufsmanager">
-    <meta name="twitter:description"
-        content="Vergleiche Angebote österreichischer Händler, plane deinen Einkauf intelligent und spare Zeit sowie Geld.">
-    <meta name="twitter:image" content="https://www.pimario.com/logo.png">
-
-    <meta name="theme-color" content="#0F3F21">
-
-    <!-- Google -->
-    <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Pimario GmbH",
-  "url":"https://www.pimario.com/",
-  "logo":"https://www.pimario.com/logo.png",
-  "image":"https://www.pimario.com/logo.png",
-  "description":"Pimario ist dein persönlicher Einkaufsmanager für Österreich.",
-  "sameAs":[
-    "https://www.instagram.com/pimario.app/"
-  ]
-}
-</script>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        html,body{
-            width:100%;
-            height:100%;
-            overflow:hidden;
-            background:#f7f9f6;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            font-family:Arial,Helvetica,sans-serif;
-        }
-
-        .container{
-            position:relative;
-            width:100%;
-            height:100%;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:10px;
-        }
-
-        .container img{
-            width:100%;
-            height:100%;
-            object-fit:contain;
-        }
-
-        .insta-link{
-            position:absolute;
-            top:2%;
-            right:2%;
-            width:160px;
-            height:60px;
-            cursor:pointer;
-            z-index:10;
-        }
-
-        @media (min-width:769px){
-            .handy-bild{
-                display:none;
-            }
-
-            .pc-bild{
-                display:block;
-            }
-        }
-
-        @media (max-width:768px){
-            .pc-bild{
-                display:none;
-            }
-
-            .handy-bild{
-                display:block;
-            }
-        }
-    </style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pimario – Dein persönlicher Einkaufsmanager</title>
+<meta name="description" content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
+<link rel="canonical" href="https://www.pimario.com/">
+<link rel="icon" href="blatt.png" type="image/png">
+<meta property="og:title" content="Pimario – Dein persönlicher Einkaufsmanager">
+<meta property="og:image" content="https://www.pimario.com/logo.png">
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f7f9f6;color:#233}
+.hero{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:10px;position:relative}
+.hero img{max-width:100%;max-height:100vh;object-fit:contain}
+.insta{position:absolute;top:2%;right:2%;width:160px;height:60px}
+footer{background:#0F3F21;color:#fff;text-align:center;padding:25px}
+footer a{color:#fff;text-decoration:none;margin:0 12px}
+@media(min-width:769px){.mobile{display:none}}
+@media(max-width:768px){.desktop{display:none}}
+</style>
 </head>
-
 <body>
-
-<div class="container">
-
-    <img src="landingpage.png"
-         class="pc-bild"
-         alt="Pimario – Dein persönlicher Einkaufsmanager">
-
-    <img src="landingpage-handy.png"
-         class="handy-bild"
-         alt="Pimario – Dein persönlicher Einkaufsmanager">
-
-    <a href="https://www.instagram.com/pimario.app/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="insta-link"></a>
-
+<div class="hero">
+<img src="landingpage.png" class="desktop" alt="Pimario">
+<img src="landingpage-handy.png" class="mobile" alt="Pimario">
+<a class="insta" href="https://www.instagram.com/pimario.app/" target="_blank"></a>
 </div>
-
+<footer>
+<p><strong>© 2026 Pimario – Eine Marke der JB Trading GmbH</strong></p>
+<p>
+<a href="impressum.html">Impressum</a> |
+<a href="datenschutz.html">Datenschutz</a> |
+<a href="https://www.instagram.com/pimario.app/" target="_blank">Instagram</a>
+</p>
+</footer>
 </body>
-
 </html>
