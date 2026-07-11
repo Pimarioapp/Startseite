@@ -1,125 +1,117 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Pimario – Dein persönlicher Einkaufsmanager</title>
 
 <meta name="description" content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
+
 <meta name="robots" content="index,follow">
-<meta name="author" content="Pimario GmbH">
 
 <link rel="canonical" href="https://www.pimario.com/">
-<link rel="icon" type="image/png" href="blatt.png">
 
-<meta property="og:title" content="Pimario – Dein persönlicher Einkaufsmanager">
-<meta property="og:description" content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
-<meta property="og:image" content="https://www.pimario.com/logo.png">
-<meta property="og:url" content="https://www.pimario.com/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="de_AT">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pimario – Dein persönlicher Einkaufsmanager">
-<meta name="twitter:description" content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
-<meta name="twitter:image" content="https://www.pimario.com/logo.png">
-
-<meta name="theme-color" content="#0F3F21">
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"Organization",
- "name":"Pimario",
- "url":"https://www.pimario.com/",
- "logo":"https://www.pimario.com/logo.png"
-}
-</script>
+<link rel="icon" href="blatt.png">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 html,body{
     width:100%;
-    margin:0;
+    overflow-x:hidden;
     background:#f7f9f6;
     font-family:Arial,Helvetica,sans-serif;
-    overflow-x:hidden;
-    overflow-y:auto;
 }
 
-.container{
-    position:relative;
-    width:100%;
-    line-height:0;
-}
-
-.container img{
-    width:100%;
-    height:auto;
+.desktop{
     display:block;
 }
 
-.pc-bild{display:block;}
-.handy-bild{display:none;}
+.mobile{
+    display:none;
+}
 
-.insta-link{
+.desktop img,
+.mobile img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.wrapper{
+    position:relative;
+}
+
+.instagram{
     position:absolute;
     top:2%;
     right:2%;
     width:220px;
     height:90px;
-    display:block;
-    z-index:10;
+    z-index:999;
 }
 
 footer{
     background:#0F3F21;
-    color:#fff;
+    color:white;
     text-align:center;
-    padding:22px;
+    padding:25px;
 }
 
-footer p{margin:8px 0;}
 footer a{
-    color:#fff;
+    color:white;
     text-decoration:none;
     margin:0 10px;
 }
 
-footer a:hover{text-decoration:underline;}
+footer a:hover{
+    text-decoration:underline;
+}
 
-@media(max-width:768px){
+@media screen and (max-width:768px){
 
-.pc-bild{display:none;}
-.handy-bild{display:block;}
+.desktop{
+    display:none !important;
+}
 
-.insta-link{
-    width:160px;
-    height:65px;
-    top:2%;
-    right:2%;
+.mobile{
+    display:block !important;
+}
+
+.instagram{
+    width:150px;
+    height:60px;
 }
 
 }
+
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="wrapper">
 
-<img src="landingpage.png"
-class="pc-bild"
-alt="Pimario">
+<div class="desktop">
+<img src="landingpage.png" alt="Pimario">
+</div>
 
-<img src="landingpage-handy.png"
-class="handy-bild"
-alt="Pimario">
+<div class="mobile">
+<img src="landingpage-handy.png" alt="Pimario">
+</div>
 
-<a href="https://www.instagram.com/pimario.app/"
+<a class="instagram"
+href="https://www.instagram.com/pimario.app/"
 target="_blank"
 rel="noopener noreferrer"
-class="insta-link"
 aria-label="Instagram"></a>
 
 </div>
@@ -129,8 +121,13 @@ aria-label="Instagram"></a>
 <p><strong>© 2026 Pimario – Eine Marke der JB Trading GmbH</strong></p>
 
 <p>
-<a href="impressum.html">Impressum</a> |
+
+<a href="impressum.html">Impressum</a>
+
+|
+
 <a href="datenschutz.html">Datenschutz</a>
+
 </p>
 
 </footer>
