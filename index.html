@@ -9,47 +9,46 @@
     <title>Pimario – Dein persönlicher Einkaufsmanager für Österreich</title>
 
     <meta name="description"
-        content="Pimario unterstützt dich dabei, Angebote österreichischer Händler zu vergleichen, deinen Einkauf intelligent zu planen und Zeit sowie Geld zu sparen.">
+        content="Pimario hilft dir dabei, Angebote österreichischer Händler zu vergleichen, deinen Einkauf intelligent zu planen und Zeit sowie Geld zu sparen.">
 
     <meta name="keywords"
-        content="Pimario, Angebote vergleichen, Supermarkt, Aktionen, Einkauf, Einkaufsmanager, Österreich, Lebensmittel, Sparen">
+        content="Pimario, Angebote vergleichen, Supermarkt, Aktionen, Einkauf, Einkaufsmanager, Österreich, Sparen">
 
     <meta name="author" content="Pimario GmbH">
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://www.pimario.com">
+    <link rel="canonical" href="https://www.pimario.com/">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="blatt.png">
 
-    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Pimario – Dein persönlicher Einkaufsmanager">
     <meta property="og:description"
         content="Vergleiche Angebote österreichischer Händler, plane deinen Einkauf intelligent und spare Zeit sowie Geld.">
     <meta property="og:image" content="https://www.pimario.com/landingpage.png">
-    <meta property="og:url" content="https://www.pimario.com">
+    <meta property="og:url" content="https://www.pimario.com/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_AT">
 
-    <!-- Twitter / X -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pimario – Dein persönlicher Einkaufsmanager">
     <meta name="twitter:description"
         content="Vergleiche Angebote österreichischer Händler und spare Zeit sowie Geld.">
     <meta name="twitter:image" content="https://www.pimario.com/landingpage.png">
 
-    <!-- Theme -->
     <meta name="theme-color" content="#0F3F21">
 
-    <!-- Strukturierte Daten für Google -->
+    <!-- Strukturierte Daten -->
     <script type="application/ld+json">
     {
       "@context":"https://schema.org",
       "@type":"Organization",
       "name":"Pimario GmbH",
-      "url":"https://www.pimario.com",
+      "url":"https://www.pimario.com/",
       "logo":"https://www.pimario.com/blatt.png",
-      "description":"Pimario entwickelt intelligente Softwarelösungen für den Lebensmitteleinkauf.",
+      "description":"Pimario ist die intelligente Einkaufsplattform für Österreich. Vergleiche Angebote, plane deinen Einkauf und spare Zeit sowie Geld.",
       "sameAs":[
         "https://www.instagram.com/pimario.app/"
       ]
@@ -57,67 +56,86 @@
     </script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: #f7f9f6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, Helvetica, sans-serif;
+        html,body{
+            width:100%;
+            background:#f7f9f6;
+            font-family:Arial,Helvetica,sans-serif;
         }
 
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
+        .hero{
+            width:100%;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            position:relative;
+            padding:10px;
         }
 
-        .container img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+        .hero img{
+            width:100%;
+            height:100%;
+            object-fit:contain;
         }
 
-        .insta-link {
-            position: absolute;
-            top: 2%;
-            right: 2%;
-            width: 160px;
-            height: 60px;
-            cursor: pointer;
-            z-index: 10;
+        .insta-link{
+            position:absolute;
+            top:2%;
+            right:2%;
+            width:160px;
+            height:60px;
+            z-index:10;
         }
 
-        @media (min-width:769px) {
-            .handy-bild {
-                display: none;
+        .seo-content{
+            max-width:900px;
+            margin:40px auto 80px;
+            padding:0 25px;
+            color:#1f2937;
+            line-height:1.7;
+        }
+
+        .seo-content h1{
+            color:#0F3F21;
+            font-size:34px;
+            margin-bottom:20px;
+        }
+
+        .seo-content h2{
+            color:#0F3F21;
+            font-size:24px;
+            margin-top:35px;
+            margin-bottom:15px;
+        }
+
+        .seo-content p{
+            margin-bottom:18px;
+            font-size:18px;
+        }
+
+        @media(min-width:769px){
+            .handy-bild{
+                display:none;
+            }
+        }
+
+        @media(max-width:768px){
+            .pc-bild{
+                display:none;
             }
 
-            .pc-bild {
-                display: block;
-            }
-        }
-
-        @media (max-width:768px) {
-            .pc-bild {
-                display: none;
+            .seo-content h1{
+                font-size:28px;
             }
 
-            .handy-bild {
-                display: block;
+            .seo-content p{
+                font-size:17px;
             }
         }
     </style>
@@ -126,16 +144,51 @@
 
 <body>
 
-    <div class="container">
+<div class="hero">
 
-        <img src="landingpage.png" class="pc-bild" alt="Pimario Landingpage">
+    <img src="landingpage.png"
+         class="pc-bild"
+         alt="Pimario – Dein persönlicher Einkaufsmanager">
 
-        <img src="landingpage-handy.png" class="handy-bild" alt="Pimario Landingpage Smartphone">
+    <img src="landingpage-handy.png"
+         class="handy-bild"
+         alt="Pimario App für Smartphone">
 
-        <a href="https://www.instagram.com/pimario.app/" target="_blank" rel="noopener noreferrer"
-            class="insta-link"></a>
+    <a href="https://www.instagram.com/pimario.app/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="insta-link"></a>
 
-    </div>
+</div>
+
+<section class="seo-content">
+
+<h1>Pimario – Dein persönlicher Einkaufsmanager</h1>
+
+<p>
+Pimario ist die intelligente Einkaufsplattform für Österreich.
+Vergleiche Angebote verschiedener Händler, entdecke aktuelle Aktionen
+und spare bei jedem Einkauf Zeit und Geld.
+</p>
+
+<p>
+Mit Pimario findest du Produkte schneller, planst deinen Einkauf
+effizienter und behältst Preise im Blick.
+Unsere Mission ist es, Einkaufen einfacher,
+transparenter und persönlicher zu machen.
+</p>
+
+<h2>Was bietet Pimario?</h2>
+
+<p>
+• Angebote österreichischer Händler vergleichen<br>
+• Intelligente Einkaufslisten<br>
+• Personalisierte Aktionen<br>
+• Preisvergleiche und Einkaufsplanung<br>
+• Moderne Einkaufserfahrung mit intelligenter Unterstützung
+</p>
+
+</section>
 
 </body>
 
