@@ -58,21 +58,56 @@ html,body{
     z-index:999;
 }
 
+/* ---------- FOOTER ---------- */
+
 footer{
     background:#0F3F21;
-    color:white;
     text-align:center;
-    padding:25px;
+    padding:35px 20px 28px;
 }
 
-footer a{
-    color:white;
+.footer-brand{
+    margin-bottom:18px;
+}
+
+.brand{
+    display:block;
+    color:#ffffff;
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:0.3px;
+}
+
+.subbrand{
+    display:block;
+    margin-top:6px;
+    color:rgba(255,255,255,0.65);
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:0.4px;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:16px;
+    font-size:15px;
+}
+
+.footer-links a{
+    color:rgba(255,255,255,0.88);
     text-decoration:none;
-    margin:0 10px;
+    transition:0.2s;
 }
 
-footer a:hover{
-    text-decoration:underline;
+.footer-links a:hover{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.footer-divider{
+    color:rgba(255,255,255,0.35);
 }
 
 @media screen and (max-width:768px){
@@ -88,6 +123,19 @@ footer a:hover{
 .instagram{
     width:150px;
     height:60px;
+}
+
+.brand{
+    font-size:22px;
+}
+
+.subbrand{
+    font-size:13px;
+}
+
+.footer-links{
+    font-size:14px;
+    gap:12px;
 }
 
 }
@@ -118,17 +166,16 @@ aria-label="Instagram"></a>
 
 <footer>
 
-<p><strong>© 2026 Pimario – Eine Marke der JB Trading GmbH</strong></p>
+    <div class="footer-brand">
+        <span class="brand">© 2026 Pimario</span>
+        <span class="subbrand">Eine Marke der JB Trading GmbH</span>
+    </div>
 
-<p>
-
-<a href="impressum.html">Impressum</a>
-
-|
-
-<a href="datenschutz.html">Datenschutz</a>
-
-</p>
+    <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <span class="footer-divider">•</span>
+        <a href="datenschutz.html">Datenschutz</a>
+    </div>
 
 </footer>
 
