@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pimarió</title>
+
+    <!-- SEO -->
+    <title>Pimario – Dein persönlicher Einkaufsmanager für Österreich</title>
+
+    <meta name="description"
+        content="Pimario unterstützt dich dabei, Angebote österreichischer Händler zu vergleichen, deinen Einkauf intelligent zu planen und Zeit sowie Geld zu sparen.">
+
+    <meta name="keywords"
+        content="Pimario, Angebote vergleichen, Supermarkt, Aktionen, Einkauf, Einkaufsmanager, Österreich, Lebensmittel, Sparen">
+
+    <meta name="author" content="Pimario GmbH">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.pimario.com">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="blatt.png">
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="Pimario – Dein persönlicher Einkaufsmanager">
+    <meta property="og:description"
+        content="Vergleiche Angebote österreichischer Händler, plane deinen Einkauf intelligent und spare Zeit sowie Geld.">
+    <meta property="og:image" content="https://www.pimario.com/landingpage.png">
+    <meta property="og:url" content="https://www.pimario.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_AT">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pimario – Dein persönlicher Einkaufsmanager">
+    <meta name="twitter:description"
+        content="Vergleiche Angebote österreichischer Händler und spare Zeit sowie Geld.">
+    <meta name="twitter:image" content="https://www.pimario.com/landingpage.png">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0F3F21">
+
+    <!-- Strukturierte Daten für Google -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"Pimario GmbH",
+      "url":"https://www.pimario.com",
+      "logo":"https://www.pimario.com/blatt.png",
+      "description":"Pimario entwickelt intelligente Softwarelösungen für den Lebensmitteleinkauf.",
+      "sameAs":[
+        "https://www.instagram.com/pimario.app/"
+      ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body, html {
+
+        html,
+        body {
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #f7f9f6; 
+            background-color: #f7f9f6;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
+
         .container {
             position: relative;
             width: 100%;
@@ -29,13 +84,13 @@
             align-items: center;
             padding: 10px;
         }
+
         .container img {
             width: 100%;
             height: 100%;
-            object-fit: contain; 
+            object-fit: contain;
         }
 
-        /* Der Klick-Bereich, angepasst an die Bildränder */
         .insta-link {
             position: absolute;
             top: 2%;
@@ -45,27 +100,43 @@
             cursor: pointer;
             z-index: 10;
         }
+
+        @media (min-width:769px) {
+            .handy-bild {
+                display: none;
+            }
+
+            .pc-bild {
+                display: block;
+            }
+        }
+
+        @media (max-width:768px) {
+            .pc-bild {
+                display: none;
+            }
+
+            .handy-bild {
+                display: block;
+            }
+        }
     </style>
+
 </head>
+
 <body>
 
     <div class="container">
-        <img src="landingpage.png" class="pc-bild" alt="Pimarió PC">
-        
-        <img src="landingpage-handy.png" class="handy-bild" alt="Pimarió Handy">
 
-        <a href="https://www.instagram.com/pimario.app/" target="_blank" class="insta-link"></a>
+        <img src="landingpage.png" class="pc-bild" alt="Pimario Landingpage">
+
+        <img src="landingpage-handy.png" class="handy-bild" alt="Pimario Landingpage Smartphone">
+
+        <a href="https://www.instagram.com/pimario.app/" target="_blank" rel="noopener noreferrer"
+            class="insta-link"></a>
+
     </div>
 
-    <style>
-        @media (min-width: 769px) {
-            .handy-bild { display: none; }
-            .pc-bild { display: block; }
-        }
-        @media (max-width: 768px) {
-            .pc-bild { display: none; }
-            .handy-bild { display: block; }
-        }
-    </style>
 </body>
+
 </html>
