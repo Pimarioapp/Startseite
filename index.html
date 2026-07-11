@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Pimario – Dein persönlicher Einkaufsmanager</title>
 
 <meta name="description" content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
-
 <meta name="robots" content="index,follow">
-
 <link rel="canonical" href="https://www.pimario.com/">
-
 <link rel="icon" href="blatt.png">
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 html,body{
     width:100%;
@@ -30,13 +21,8 @@ html,body{
     font-family:Arial,Helvetica,sans-serif;
 }
 
-.desktop{
-    display:block;
-}
-
-.mobile{
-    display:none;
-}
+.desktop{display:block;}
+.mobile{display:none;}
 
 .desktop img,
 .mobile img{
@@ -58,84 +44,99 @@ html,body{
     z-index:999;
 }
 
-/* ---------- FOOTER ---------- */
+/* ---------- PREMIUM FOOTER ---------- */
 
 footer{
-    background:#0F3F21;
+    background:radial-gradient(circle at top,#174528 0%,#11331f 45%,#0c2417 100%);
     text-align:center;
-    padding:35px 20px 28px;
+    color:#fff;
+    padding:70px 20px 55px;
+    box-shadow:inset 0 1px rgba(255,255,255,.04);
 }
 
 .footer-brand{
-    margin-bottom:18px;
-}
-
-.brand{
-    display:block;
-    color:#ffffff;
-    font-size:26px;
+    font-size:56px;
     font-weight:700;
-    letter-spacing:0.3px;
+    letter-spacing:-1px;
+    line-height:1.1;
 }
 
-.subbrand{
-    display:block;
-    margin-top:6px;
-    color:rgba(255,255,255,0.65);
-    font-size:14px;
-    font-weight:400;
-    letter-spacing:0.4px;
+.footer-brand .copy{
+    color:rgba(255,255,255,.60);
+    font-weight:300;
+    margin-right:10px;
+}
+
+.footer-sub{
+    margin-top:16px;
+    color:rgba(255,255,255,.55);
+    font-size:20px;
+    font-weight:300;
+    letter-spacing:.4px;
+}
+
+.footer-line{
+    width:220px;
+    height:1px;
+    background:rgba(150,220,170,.25);
+    margin:38px auto;
 }
 
 .footer-links{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:16px;
-    font-size:15px;
+    gap:28px;
 }
 
 .footer-links a{
-    color:rgba(255,255,255,0.88);
+    color:rgba(255,255,255,.90);
     text-decoration:none;
-    transition:0.2s;
+    font-size:19px;
+    transition:.25s;
 }
 
 .footer-links a:hover{
-    color:#ffffff;
-    text-decoration:none;
+    color:#A9E4B3;
 }
 
 .footer-divider{
-    color:rgba(255,255,255,0.35);
+    color:rgba(150,220,170,.35);
 }
 
-@media screen and (max-width:768px){
+@media(max-width:768px){
 
-.desktop{
-    display:none !important;
-}
-
-.mobile{
-    display:block !important;
-}
+.desktop{display:none!important;}
+.mobile{display:block!important;}
 
 .instagram{
     width:150px;
     height:60px;
 }
 
-.brand{
-    font-size:22px;
+footer{
+    padding:48px 20px 40px;
 }
 
-.subbrand{
-    font-size:13px;
+.footer-brand{
+    font-size:38px;
+}
+
+.footer-sub{
+    font-size:16px;
 }
 
 .footer-links{
-    font-size:14px;
-    gap:12px;
+    gap:18px;
+}
+
+.footer-links a{
+    font-size:16px;
+}
+
+.footer-line{
+    width:170px;
+    margin:28px auto;
 }
 
 }
@@ -166,16 +167,21 @@ aria-label="Instagram"></a>
 
 <footer>
 
-    <div class="footer-brand">
-        <span class="brand">© 2026 Pimario</span>
-        <span class="subbrand">Eine Marke der JB Trading GmbH</span>
-    </div>
+<div class="footer-brand">
+<span class="copy">© 2026</span>Pimario
+</div>
 
-    <div class="footer-links">
-        <a href="impressum.html">Impressum</a>
-        <span class="footer-divider">•</span>
-        <a href="datenschutz.html">Datenschutz</a>
-    </div>
+<div class="footer-sub">
+Eine Marke der JB Trading GmbH
+</div>
+
+<div class="footer-line"></div>
+
+<div class="footer-links">
+<a href="impressum.html">Impressum</a>
+<span class="footer-divider">|</span>
+<a href="datenschutz.html">Datenschutz</a>
+</div>
 
 </footer>
 
