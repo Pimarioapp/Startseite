@@ -1,169 +1,126 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pimario – Dein persönlicher Einkaufsmanager</title>
 
-    <title>Pimario – Dein persönlicher Einkaufsmanager</title>
+<meta name="description" content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Pimario GmbH">
 
-    <meta name="description"
-        content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
+<link rel="canonical" href="https://www.pimario.com/">
+<link rel="icon" type="image/png" href="blatt.png">
 
-    <meta name="robots" content="index,follow">
-    <meta name="author" content="Pimario GmbH">
+<meta property="og:title" content="Pimario – Dein persönlicher Einkaufsmanager">
+<meta property="og:description" content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
+<meta property="og:image" content="https://www.pimario.com/logo.png">
+<meta property="og:url" content="https://www.pimario.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_AT">
 
-    <link rel="canonical" href="https://www.pimario.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pimario – Dein persönlicher Einkaufsmanager">
+<meta name="twitter:description" content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
+<meta name="twitter:image" content="https://www.pimario.com/logo.png">
 
-    <!-- Browser-Tab -->
-    <link rel="icon" type="image/png" href="blatt.png">
+<meta name="theme-color" content="#0F3F21">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Pimario – Dein persönlicher Einkaufsmanager">
-    <meta property="og:description"
-        content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
-    <meta property="og:image" content="https://www.pimario.com/logo.png">
-    <meta property="og:url" content="https://www.pimario.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de_AT">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pimario – Dein persönlicher Einkaufsmanager">
-    <meta name="twitter:description"
-        content="Vergleiche Angebote österreichischer Händler und plane deinen Einkauf intelligent mit Pimario.">
-    <meta name="twitter:image" content="https://www.pimario.com/logo.png">
-
-    <meta name="theme-color" content="#0F3F21">
-
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Pimario",
-  "url":"https://www.pimario.com/",
-  "logo":"https://www.pimario.com/logo.png"
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Pimario",
+ "url":"https://www.pimario.com/",
+ "logo":"https://www.pimario.com/logo.png"
 }
 </script>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html,
-body{
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{
     width:100%;
-    height:100%;
-    overflow:hidden;
     background:#f7f9f6;
-    display:flex;
-    flex-direction:column;
     font-family:Arial,Helvetica,sans-serif;
+    overflow-x:hidden;
 }
 
 .container{
-    flex:1;
     position:relative;
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:10px;
 }
 
 .container img{
     width:100%;
-    height:100%;
-    object-fit:contain;
+    height:auto;
+    display:block;
 }
 
-/* Instagram Klickbereich */
+.pc-bild{display:block;}
+.handy-bild{display:none;}
+
 .insta-link{
     position:absolute;
     top:2%;
     right:2%;
     width:220px;
-    height:80px;
-    z-index:100;
-    cursor:pointer;
+    height:90px;
+    display:block;
+    z-index:10;
 }
 
 footer{
     background:#0F3F21;
     color:#fff;
     text-align:center;
-    padding:18px 20px;
+    padding:22px;
 }
 
-footer p{
-    margin:8px 0;
-}
-
+footer p{margin:8px 0;}
 footer a{
-    color:white;
+    color:#fff;
     text-decoration:none;
     margin:0 10px;
 }
 
-footer a:hover{
-    text-decoration:underline;
+footer a:hover{text-decoration:underline;}
+
+@media(max-width:768px){
+
+.pc-bild{display:none;}
+.handy-bild{display:block;}
+
+.insta-link{
+    width:160px;
+    height:65px;
+    top:2%;
+    right:2%;
 }
 
-@media (min-width:769px){
-
-    .handy-bild{
-        display:none;
-    }
-
-    .pc-bild{
-        display:block;
-    }
-
 }
-
-@media (max-width:768px){
-
-    .pc-bild{
-        display:none;
-    }
-
-    .handy-bild{
-        display:block;
-    }
-
-    .insta-link{
-        width:150px;
-        height:55px;
-        top:2%;
-        right:2%;
-    }
-
-}
-
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-    <img src="landingpage.png"
-         class="pc-bild"
-         alt="Pimario">
+<img src="landingpage.png"
+class="pc-bild"
+alt="Pimario">
 
-    <img src="landingpage-handy.png"
-         class="handy-bild"
-         alt="Pimario">
+<img src="landingpage-handy.png"
+class="handy-bild"
+alt="Pimario">
 
-    <a href="https://www.instagram.com/pimario.app/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="insta-link"
-       aria-label="Instagram"></a>
+<a href="https://www.instagram.com/pimario.app/"
+target="_blank"
+rel="noopener noreferrer"
+class="insta-link"
+aria-label="Instagram"></a>
 
 </div>
 
@@ -179,5 +136,4 @@ footer a:hover{
 </footer>
 
 </body>
-
 </html>
