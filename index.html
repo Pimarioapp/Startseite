@@ -49,96 +49,127 @@
 </script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
         html,
-        body {
-            width: 100%;
-            background: #f7f9f6;
-            font-family: Arial, Helvetica, sans-serif;
+        body{
+            width:100%;
+            background:#f7f9f6;
+            font-family:Arial,Helvetica,sans-serif;
         }
 
-        .hero {
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
+        .hero{
+            width:100%;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            position:relative;
         }
 
-        .hero img {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: contain;
+        .hero img{
+            width:100%;
+            height:auto;
+            display:block;
+            object-fit:contain;
         }
 
-        footer {
-            background: #0F3F21;
-            color: white;
-            text-align: center;
-            padding: 28px 20px;
+        /* Unsichtbarer Instagram-Klickbereich */
+        .insta-link{
+            position:absolute;
+            top:2%;
+            right:2%;
+            width:230px;
+            height:90px;
+            z-index:100;
+            cursor:pointer;
+            display:block;
         }
 
-        footer p {
-            margin: 10px 0;
+        footer{
+            background:#0F3F21;
+            color:white;
+            text-align:center;
+            padding:28px 20px;
         }
 
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: opacity .2s;
+        footer p{
+            margin:10px 0;
         }
 
-        footer a:hover {
-            opacity: .8;
+        footer a{
+            color:white;
+            text-decoration:none;
+            margin:0 10px;
         }
 
-        @media (min-width:769px) {
-            .mobile {
-                display: none;
+        footer a:hover{
+            text-decoration:underline;
+        }
+
+        @media (min-width:769px){
+
+            .mobile{
+                display:none;
             }
+
         }
 
-        @media (max-width:768px) {
-            .desktop {
-                display: none;
+        @media (max-width:768px){
+
+            .desktop{
+                display:none;
             }
+
+            /* Klickbereich am Handy etwas kleiner */
+            .insta-link{
+                width:160px;
+                height:60px;
+                top:2%;
+                right:2%;
+            }
+
         }
+
     </style>
 
 </head>
 
 <body>
 
-    <section class="hero">
+<section class="hero">
 
-        <img src="landingpage.png"
-             class="desktop"
-             alt="Pimario – Dein persönlicher Einkaufsmanager">
+    <img src="landingpage.png"
+         class="desktop"
+         alt="Pimario – Dein persönlicher Einkaufsmanager">
 
-        <img src="landingpage-handy.png"
-             class="mobile"
-             alt="Pimario – Dein persönlicher Einkaufsmanager">
+    <img src="landingpage-handy.png"
+         class="mobile"
+         alt="Pimario – Dein persönlicher Einkaufsmanager">
 
-    </section>
+    <a href="https://www.instagram.com/pimario.app/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="insta-link"
+       aria-label="Pimario auf Instagram"></a>
 
-    <footer>
+</section>
 
-        <p><strong>© 2026 Pimario – Eine Marke der JB Trading GmbH</strong></p>
+<footer>
 
-        <p>
-            <a href="impressum.html">Impressum</a> |
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
+    <p><strong>© 2026 Pimario – Eine Marke der JB Trading GmbH</strong></p>
 
-    </footer>
+    <p>
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+
+</footer>
 
 </body>
 
